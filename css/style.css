@@ -1,0 +1,98 @@
+/*clase barra superior e inferior*/
+.toolbar {
+    width: 900px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Div contenedor de las baaras y canvas*/
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Estilo de imagenes de la barra superior*/
+.tool {
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    
+}
+
+
+/*Botones selector color del pen*/
+.colors button {
+    display: inline-block;
+    border: 1px solid #00000026;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px
+}
+
+/*La pseudoclase CSS :nth-of-type() coincide con 
+los elementos en función de su posición entre los 
+hermanos del mismo tipo (nombre de etiqueta)..*/
+
+.colors button:nth-of-type(1) {
+    background-color: #0000ff;
+}
+
+.colors button:nth-of-type(2) {
+    background-color: #f00000;
+}
+
+.colors button:nth-of-type(3) {
+    background-color: #ffff00;
+}
+
+.colors button:nth-of-type(4) {
+    background-color: #009fff;
+}
+
+.colors button:nth-of-type(5) {
+    background-color: #EC911E;
+}
+
+.colors button:nth-of-type(6) {
+    background-color: #781EEC ;
+}
+
+.colors button:nth-of-type(7) {
+    background-color: #00ff00;
+}
+
+.colors button:nth-of-type(8) {
+    background-color: #999999;
+}
+
+/*Botones aplicadores de filtros*/
+.btn {
+    border: 0;
+    background-color: #ece8e8;
+    margin: 12px;
+    padding: 8px;
+    height: 30px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Estilo etiqueta img*/
+img {
+    padding: 8px;
+}
+
+/*Estilo  input */
+#colorRGB {
+    margin: 20px;
+}
+

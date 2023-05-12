@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Paint3</title>
+   </head>
+   <body onload= "main()">
+      <div class="container">
+         <div class="toolbar">
+            <div>
+               <img class="tool" src="img/Pencil.png" id="myPen" alt="">
+               <img class="tool" src="img/eraser.png" alt="" id="myEraser">   
+            </div>
+            <div class="colors">
+               <button type="button" value="#0000ff"></button>
+               <button type="button" value="#f00000"></button>
+               <button type="button" value="#ffff00"></button>
+               <button type="button" value="#009fff"></button>
+               <button type="button" value="#EC911E"></button>
+               <button type="button" value="#781EEC "></button>
+               <button type="button" value="#00ff00"></button>
+               <button type="button" value="#999999"></button>
+            </div>
+            <input type="color" id="colorRGB">   
+            <div>
+               <input type="range" id="thickness" min="1" max="24">  
+               <div id="thicknessLine"></div>
+            </div>
+            <div>
+               <img class="tool" src="img/trash.png" id="clearCanvas" alt="">
+            </div>
+            <div>
+               <img class="tool" src="img/image_icon.jpg" id="selectImage" alt="">
+               <input class="form-control" type="file" id="upload" style="display:none">
+            </div>
+            <div>
+               <img  class="tool"  src="img/download_icon.png" id="btn_download"  alt="">
+            </div>
+         </div>
+
+         <canvas id="myCanvas" class="click" width="900" height="600" style="border: #000 solid 3px" ></canvas>
+
+         <div class="toolbar">
+            <button class="btn" id="btn_blackAndWhite" type="button">B&W</button>
+            <button class="btn" id="btn_binarize" type="button">Binarizar</button>
+            <button class="btn" id="btn_invert" type="button">Negativo</button>
+            <button class="btn" id="btn_sepia" type="button">Sepia</button>
+            <button class="btn" id="btn_brightness" type="button">Brillo</button>
+            <button class="btn" id="btn_contrast" type="button">Contraste</button>
+            <button class="btn" id="btn_blur" type="button">Blur</button>
+            <button class="btn" id="btn_embossed" type="button">Relieve</button>
+            <button class="btn" id="btn_edges" type="button">Bordes</button>
+            <button class="btn" id="btn_reset" type="button">Restaurar</button>
+            
+         </div>
+      </div>
+      
+      <script src="js/image.js"> </script>
+      <script src="js/pen.js"></script>
+      <script src="js/main.js"></script>
+
+   </body>
+</html>
